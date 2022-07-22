@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--==================================================BOOTSTRAP-LINKS==================================================-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================================================CSS_PRINCIPAL==================================================-->
+
+
+    <link rel="stylesheet" href="css/form.css">
+
+    <!--==================================================CSS-INTERNO==================================================-->
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+     <h1>Bem-vindo</h1>
+        <!-- <form id="signin">
+          <input type="text" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <div class="divCheck">
+            <input type="checkbox" />
+            <span>Remember Password</span>
+          </div>
+          <button type="submit">Sign in</button>
+        </form> -->
+    
+        <form id="signin" action="cad.php" method="post" onsubmit="return formv()" name="dados">
+          <input type="text" placeholder="Nome" name="lNome" required />
+          <input type="text" placeholder="Email" name="lEmail" required />
+          <input type="password" placeholder="Senha" name="lSenha" required />
+          <button id="btnform" type="submit" value="cadastrar">CADRASTRAR</button><br>
+          <br>
+          <center>
+          <p onclick="togglepopup()" class="first-button">Já Possui uma conta? <a href="form.php">Clique Aqui</a></p>
+        </center>
+        </form>
+      </div>
+    
+</body>
+
+</html>
